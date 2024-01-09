@@ -6,7 +6,12 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+		"test:chrome": "npx playwright test --project=chromium",
+		"test:safari": "npx playwright test --project=webkit",
+		"test:firefox": "npx playwright test --project=firefox"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
