@@ -18,7 +18,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::907236085190:role/Croffle-ECR
-          aws-region: ap-southeast-1
+          aws-region: us-east-1 # for public repo
 
       - name: Login to Amazon ECR Public
         id: login-ecr-public
